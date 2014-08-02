@@ -38,7 +38,8 @@ p
 .backcuad
 	background-image: url(../image/backgrounds/bg.png);
 	background-repeat: repeat;
-
+.inline 
+	display inline-block
 .icosize
 	font-size 2em
 .title
@@ -48,7 +49,36 @@ p
 	text-align justify
 	padding 1em
 	width 80%
-
+.categorias
+	width 85%
+	text-align center
+	.item
+		display inline-block
+		padding 1em
+		font-size 1em
+.productos
+	width 85%
+	padding-bottom 1em
+	.producto
+		border 2px solid #999
+		padding .5em
+		margin .5em
+		border-radius 5px
+		overflow hidden
+		
+		.tag 
+			font-weight bold
+			color #444
+			font-size 1em
+		.nombre
+		.marca
+		.codigo
+		.description
+			font-weight normal
+		.imagen
+			img
+				float right
+				width 40%
 .header
 	height 3.5em
 
@@ -139,6 +169,17 @@ footer
 						content "\e602"
 
 @media screen and (min-width: 768px)
+
+	.menu	
+		.lista
+			.item	
+				a
+					p 
+						font-size 16px
+	.categorias
+		width 80%
+		.item
+			font-size 1.5em
 	.contener		
 		.vendors
 			figure
@@ -148,8 +189,15 @@ footer
 			text-align center
 			figure
 				display inline-block
-				width 250px
+				width 200px
 	.icosize
 		font-size 5em
+	.productos
+		width 80%
+		.producto
+			.imagen
+				img
+					float right
+					max-width 250px
 
 				
